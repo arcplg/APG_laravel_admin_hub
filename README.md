@@ -151,3 +151,25 @@ make .vscode/launch.json
     ]
 }
 ```
+
+## Development Tips
+
+### サイドバーの変更をしたい
+config/adminlte.php の中にサイドバーのJSONがあるためそこを書き換えます。
+権限毎に管理したい場合は
+```
+'can'         => 'divisions',
+```
+のようなオプションを追加できます。
+
+### 権限の追加とかアクセス制限はどうやるの？
+RoleやPermission テーブルを駆使してください。
+
+
+### AdminLTEで使えるpluginやアイコンを確認したい
+Laravel-AdminLTE のwikiを読みましょう。全て書いています。
+https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation
+
+### JQuery？？
+ごめんなさい。。
+
